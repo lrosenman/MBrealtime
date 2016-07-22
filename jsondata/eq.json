@@ -1,0 +1,27 @@
+{"type":"FeatureCollection","metadata":{"totalCount":212316},"features":[{
+  "geometry": {
+    "type": "Point", 
+    "coordinates": [
+      29.08, 
+      39.1, 
+      -4.0
+    ]
+  }, 
+  "type": "Feature", 
+  "id": "20160324_0000022", 
+  "properties": {
+    "lastupdate": "2016-03-24T04:55:00.0Z", 
+    "magtype": "ml", 
+    "evtype": "ke", 
+    "lon": 29.08, 
+    "auth": "ISK", 
+    "lat": 39.1, 
+    "depth": 4.0, 
+    "unid": "20160324_0000022", 
+    "mag": 2.9, 
+    "time": "2016-03-24T04:47:43.1Z", 
+    "source_id": "496212", 
+    "source_catalog": "EMSC-RTS", 
+    "flynn_region": "WESTERN TURKEY"
+  }
+}]}

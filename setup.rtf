@@ -1,0 +1,106 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fmodern\fcharset0 Courier;\f2\fmodern\fcharset0 Courier-Bold;
+\f3\fnil\fcharset0 LucidaGrande;}
+{\colortbl;\red255\green255\blue255;\red110\green5\blue0;\red244\green246\blue252;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww29340\viewh9920\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf0 pws LIVE DATA home station setup March 2016\
+
+\b0 \
+once you have extracted the personalised station zip file \
+\
+create a folder on your server called 
+\b pws
+\b0 \
+upload the extracted zip file contents to the folder pws on your server \
+\
+\
+
+\b DATA SOURCE /UNITS/TIMEZONE/WU STATION ID /API KEY
+\b0 \
+\
+complete your your details to the 
+\b settings.php
+\b0  file everything is driven and used by this \
+\
+\
+it will look like this .\
+<?php\
+### HOME WEATHER STATION TEMPLATE SETUP please set up and check thoroughly all \
+### settings incorrect settings will show incorrect data (updated Sunday 6TH March 2016) ####\
+\
+$TZ= 'America/Phoenix'; // important set your time zone America/New_York for example go here to find your http://php.net/manual/en/timezones.php\
+$TZconf = 'America/Phoenix';  // Your timezone for charts data \
+$api= 'xxxxxxxxxxxxx'; // important Weather Underground api key developer key '1234567890'\
+$stationName = 'Youngtown,AZ'; // name for station\
+$stationlocation = 'Arizona'; // add your relative location city,town,village,district, or region \
+$WUID = 'ABCDEDE2'; // YOUR Weather Underground station ID this is used for charts\
+$id   = 'ABCDEDE2'; // YOUR Weather Underground station ID this is used for forecast\
+$lat  = '33.570076'; // you can use google maps to determine your lat critical for moon phase,sunrise/set\
+$lon  = '-112.307907'; // you can use google maps to determine your lon critical for moon phase,sunrise/set\
+$elevation   = '1060ft'; //add your elevation  ft or metres\
+$dataSource = 'wunderground'; // 'wunderground' = weather underground server only change if oyu are using an additional source for chart data; \
+$metric = false; // true for metric units, false for imperial/non metric units\
+$unitsLnk= 'english'; // metric or english for non metric\
+$windmu = 'mph'; // 'm/s' or 'km/h or mph' for units selection\
+$windunits = 'MPH'; // set template output for wind units displayed use capitals MPH,KMH,M/S,KTS\
+$indoorunit ='Fahrenheit'; // template temperatures units Celsius or Fahrenheit\
+$templateunit = 'F'; // set template output for temp units displayed use capitals F or C\
+$rainunit = 'in'; // set template output for rain units displayed use capitals in or mm\
+$livedata           = 'http://www.something.com/MBrealtime.txt'; // path to raw data\
+$hardware           = 'ADD YOUR HARDWARE'; // hardware type i.e Davis VP2,Ambient,Accurite,etc// \
+$version            = \'91MeteoBridge\'92; // template version and type of source Clientraw,MeteoBridge,Cumulus or other\
+$email              = 'something@dot.com'; // contact email for form\
+$twitter            = '@username'; // twitter username used on form if available\
+\
+
+\b \
+
+\b0 \
+
+\b Cron jobs (i\cf2 mportant without cron jobs running the template will always use sample data provided in zip file and produce uptodate forecast data\cf0 )
+\b0 \
+\
+1.there  is 2
+\b\fs28  
+\b0\fs24 cron files in this version and all data is now moved to its own folder called jsodata and cron files are now located in cronfiles folder so please update your cron structure 
+\f1\fs28 \cb3 \expnd0\expndtw0\kerning0
+pws/
+\f2\b cronfiles
+\f1\b0 /stationcron.php
+\f0\fs24 \cb1 \kerning1\expnd0\expndtw0 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs28 \cf0 \expnd0\expndtw0\kerning0
+run these  in  using  
+\f2\b \cb3 php -q /home/xxxxxx/public_html/pws/cronfiles/stationcron.php
+\f1\b0 \
+
+\f3 \cb1 xxxx is your home directory on your server\
+\
+
+\b stationcron.php
+\b0  
+\f0 \'a0
+\f3 for current sky 
+\f0  data run every 6-10 minutes or preferred \
+
+\f3\b forecastcron.php
+\b0  
+\f0 \'a0
+\f3 for daily and forecast 
+\f0 run every 60 minutes or preferred period \
+\
+
+\f3 \
+once it is on your server and running the cron jobs you can view the weather station template\
+your url  
+\b /pws/
+\f0 \kerning1\expnd0\expndtw0 meteobridge.php 
+\f3\b0 \expnd0\expndtw0\kerning0
+ \
+\
+\
+}

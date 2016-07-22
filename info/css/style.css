@@ -1,0 +1,220 @@
+
+body {
+  font-family: 'Helvetica', arial;
+  font-size: 12px;
+  line-height: 1.4em;
+  color: #fff;
+  background: none; 
+}
+
+a  {
+	
+	font-family: 'Helvetica', arial;
+  font-size: 12px;
+  line-height: 1.8em;
+  color: #fff;
+  text-decoration:none;
+   }
+input,
+button {
+  font-family: 'Helvetica', arial;
+  font-weight: 300;
+  font-size: 0.8em;
+  border: 0;
+  padding: 3px 5px;
+  border-radius: 5px;
+   
+}
+
+h1 {
+  margin: 0.5em 0 1em 0;
+  font-size: 0.7em;
+  
+  color: #fff;
+}
+
+h2, h3 {
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+.animation {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.wrapper {
+  padding:5%;
+  margin: 5px ;
+  margin-left:4%;
+  margin-top:10px;
+  background:none; 
+  position:absolute;
+}
+
+
+.header{
+   color: #fff!important;
+    margin-top: 0px;
+    border-radius: 75%;
+    height: 103px;
+    width: 103px;
+    float: left;
+    margin-left: 15px;
+    border-top: 10px solid rgba(233, 235, 241, 1);
+    border-right: 10px solid rgba(233, 235, 241, 1);
+    border-left: 10px solid rgba(233, 235, 241, 1);
+    border-bottom: 10px solid rgba(233, 235, 241, 1);
+    font-size: 1em!important;
+    padding-top: 5%;
+    background: rgba(108, 116, 119, 1);
+    font-family: "Helvetica", Arial;
+    -webkit-font-smoothing: antialiased!important;
+    font-weight: 600;z-index:99999;
+}
+.text {
+	 font-size: 0.9em!important;
+    padding-top: 25%;
+	padding-left:10%}
+	
+.wrapper.cards {
+  background: 0;
+  width: 78%;
+  padding: 20px 0 0 0; border-radius: 5px;
+}
+
+.container {
+  position: relative;
+  float: left;
+  width: 48%;
+  height: 345px;
+  margin: 10px 0 10px 2%;
+  background: #fff; border-radius: 5px;
+  
+  /* Set the depth of the elements */
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -o-perspective: 800px;
+  perspective: 800px;
+}
+
+.container:first-child {
+  margin-left: 0;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  cursor: pointer; border-radius: 5px;
+  
+  /* Set the transition effects */
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  -o-transition: -o-transform 0.4s;
+  transition: transform 0.4s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.card.flipped {
+  -webkit-transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -o-transform: rotateY( 180deg );
+  transform: rotateY( 180deg ); border-radius: 5px;
+}
+
+.card .front,
+.card .back {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 260px;
+  color: white;
+  text-align: center;
+  font-size: 1.7em;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  
+  box-shadow: 3px 5px 20px 2px rgba(0, 0, 0, 0.25); border-radius: 5px; 
+}
+
+.card .back {
+  width: 94%;
+  padding-left: 3%;
+  padding-right: 3%;
+  font-size: 16px;
+  text-align: left;
+  line-height: 25px; border-radius: 5px; 
+}
+
+.formItem:first-child {
+  margin-top: 20px;
+}
+
+.card .back label {
+  display: inline-block;
+  width: 70px;
+  text-align: left;
+}
+
+.card .front {
+  background: #df826b; border-radius: 5px;
+  background-image:url(env.png);background-repeat:no-repeat;
+}
+
+.card .back {
+  background: #66a1ba;
+  -webkit-transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -o-transform: rotateY( 180deg );
+  transform: rotateY( 180deg ); border-radius: 5px; 
+  
+}
+
+.container:first-child .card .front {
+  background: #66a1ba; border-radius: 5px;
+  background-image:url(sun.png);background-repeat:no-repeat;
+ 
+}
+
+.container:first-child .card .back {
+  background: #df826b; border-radius: 5px;
+}
+
+.cardTitle {
+  font-size: 1em;
+  line-height: 1em;
+  margin: 0;
+}
+
+.content {
+  padding: 4%;
+  
+  text-align: left;
+}
+
+button.btnSend {
+  display: inline-block;
+  min-width: 100px;
+  padding: 3px 5px;
+  margin-top: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: #03446A;
+  background: #fff;
+  border: 0;
+  border-radius: 0;
+}

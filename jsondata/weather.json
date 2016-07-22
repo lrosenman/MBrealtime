@@ -1,0 +1,94 @@
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "conditions": 1
+  }
+	}
+  ,	"current_observation": {
+		"image": {
+		"url":"http://icons.wxug.com/graphics/wu2/logo_130x80.png",
+		"title":"Weather Underground",
+		"link":"http://www.wunderground.com"
+		},
+		"display_location": {
+		"full":"Mimarsinan, Turkey",
+		"city":"Mimarsinan",
+		"state":"",
+		"state_name":"Turkey",
+		"country":"TU",
+		"country_iso3166":"TR",
+		"zip":"00000",
+		"magic":"17",
+		"wmo":"17060",
+		"latitude":"41.000736",
+		"longitude":"28.542501",
+		"elevation":"16.00000000"
+		},
+		"observation_location": {
+		"full":"Sinanoba Istanbul, Istanbul, Ä°STANBUL",
+		"city":"Sinanoba Istanbul, Istanbul",
+		"state":"Ä°STANBUL",
+		"country":"TURKEY",
+		"country_iso3166":"TR",
+		"latitude":"41.000736",
+		"longitude":"28.542501",
+		"elevation":"135 ft"
+		},
+		"estimated": {
+		},
+		"station_id":"ISTANBUL161",
+		"observation_time":"Last Updated on March 24, 9:09 AM EET",
+		"observation_time_rfc822":"Thu, 24 Mar 2016 09:09:48 +0200",
+		"observation_epoch":"1458803388",
+		"local_time_rfc822":"Thu, 24 Mar 2016 09:10:03 +0200",
+		"local_epoch":"1458803403",
+		"local_tz_short":"EET",
+		"local_tz_long":"Europe/Istanbul",
+		"local_tz_offset":"+0200",
+		"weather":"Mostly Cloudy",
+		"temperature_string":"59.2 F (15.1 C)",
+		"temp_f":59.2,
+		"temp_c":15.1,
+		"relative_humidity":"70%",
+		"wind_string":"From the WNW at 2.0 MPH Gusting to 2.5 MPH",
+		"wind_dir":"WNW",
+		"wind_degrees":289,
+		"wind_mph":2.0,
+		"wind_gust_mph":"2.5",
+		"wind_kph":3.2,
+		"wind_gust_kph":"4.0",
+		"pressure_mb":"998",
+		"pressure_in":"29.47",
+		"pressure_trend":"+",
+		"dewpoint_string":"50 F (10 C)",
+		"dewpoint_f":50,
+		"dewpoint_c":10,
+		"heat_index_string":"NA",
+		"heat_index_f":"NA",
+		"heat_index_c":"NA",
+		"windchill_string":"NA",
+		"windchill_f":"NA",
+		"windchill_c":"NA",
+		"feelslike_string":"59.2 F (15.1 C)",
+		"feelslike_f":"59.2",
+		"feelslike_c":"15.1",
+		"visibility_mi":"6.2",
+		"visibility_km":"10.0",
+		"solarradiation":"141",
+		"UV":"1.0","precip_1hr_string":"0.00 in ( 0 mm)",
+		"precip_1hr_in":"0.00",
+		"precip_1hr_metric":" 0",
+		"precip_today_string":"0.00 in (0 mm)",
+		"precip_today_in":"0.00",
+		"precip_today_metric":"0",
+		"icon":"mostlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/mostlycloudy.gif",
+		"forecast_url":"http://www.wunderground.com/global/stations/17060.html",
+		"history_url":"http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=ISTANBUL161",
+		"ob_url":"http://www.wunderground.com/cgi-bin/findweather/getForecast?query=41.000736,28.542501",
+		"nowcast":""
+	}
+}

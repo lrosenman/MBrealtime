@@ -1,0 +1,219 @@
+/*
+****** earthquake (deprem) modal css layout created by brian underdown for home weather simplicity template ******
+****** modification to this IS at your own risk . it is important to understand how to use ******
+****** created Saturday 31st October 2015 ******
+****** Home Weather Station Template Simplicity by brian underdown is licensed under a ******
+****** Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. ******
+*/
+
+
+.body {
+	
+	background:none;
+	
+	padding:0px;
+	
+	width:505px;
+		font-family:helvetica;
+		
+		display:inline-block;
+	margin-left:0px;
+	height:345px;
+	overflow:hidden;
+	margin-top:10px;
+	 border-right: 1px solid rgba(233, 235, 241, 1);
+	  border-left: 1px solid rgba(233, 235, 241, 1);
+	   border-top: 1px solid rgba(233, 235, 241, 1);
+	    border-bottom: 1px solid rgba(233, 235, 241, 1);	
+		margin-left:45px;padding:5px;	
+		
+-webkit-border-radius:4px;
+-moz-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+font-family: 'Helvetica', Helvetica, Arial!important ;	
+		 }
+	  
+a {
+	
+	color:#777 !important;text-transform:none;
+	text-decoration:none;font-family: 'Helvetica', Helvetica, Arial!important ;	
+
+}
+
+
+
+.regiontitle
+{
+	color:#fff; display:block;margin-bottom:-5px;margin-left:45px;margin-top:5px;
+	background:#df826b;
+	
+	font-family: 'Helvetica', Helvetica, Arial!important ;	
+
+	width:508px;	  
+	height:20px;
+	padding:5px;
+	-webkit-border-radius: 4px;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+border-radius: 4px;
+	font-size:0.9em;
+	text-align:center;
+	
+}
+
+.magnitude{
+	color:#4e5a69; display:block;margin-bottom:0;margin-left:25px;margin-top:5px;
+	background:none;
+	border-radius:4px;
+	width:80%;
+	height:100px;
+	padding:5px;
+    background-position: left 240px top 5px;
+    background-repeat: no-repeat !important;
+	font-family: 'verbregular', Helvetica, Arial!important ;	
+
+}
+
+.magnitudetitle{
+	color:#fff;
+	font-size:9px;
+	margin-left:66px;margin-top:70px;
+	position:absolute;font-family: 'Helvetica', Helvetica, Arial!important ;	
+
+
+}
+
+
+
+
+
+
+.mag{
+	color: #fff!important;
+   
+    border-radius:50%;
+    height: 35px;
+    width: 35px;
+	padding:20px;
+    padding-top: 18px;
+    float: left;
+    background: #df826b;
+    border-top: 10px solid rgba(233, 235, 241, 1);
+    border-right: 10px solid rgba(233, 235, 241, 1);
+    border-left: 10px solid rgba(233, 235, 241, 1);
+    border-bottom: 10px solid rgba(233, 235, 241, 1);
+	font-size:26px;
+	margin-bottom:0px;margin-left:10px;
+	font-family: 'verbregular', Helvetica, Arial!important ;	
+
+   
+   
+   
+}
+
+ .mag .content {float: left;
+    line-height: 1;
+    margin-top: -.6em;
+    padding-top: 50%;
+    text-align: center;
+    width: 100%;
+   font-family: 'Helvetica', Helvetica, Arial!important ;	
+
+    -webkit-font-smoothing: antialiased!important;
+    font-size: 0.8em;
+    z-index: 99999;
+   	margin-left:15px;
+	}
+	
+	
+	
+	
+
+.place{
+	position:absolute;
+	 color: #4e5a69;
+    font-size: 12px;
+    font-weight: 600;
+    width: 200px;
+    margin-left: 160px;
+    margin-top: 40px;
+  font-family: 'Helvetica', Helvetica, Arial!important ;	
+
+	text-align:center;
+	
+}
+
+.place span{
+	
+	 color: #df826b;
+	 font-weight:normal;
+	 font-size:12px;
+	 font-weight:600;font-family: 'Helvetica', Helvetica, Arial!important ;	
+
+   
+	
+}
+.earthquakefooter
+{
+	color:#777; display:block;margin-bottom:25px;margin-left:-14px;margin-top:5px;
+	background:none;
+	
+	font-family: 'Helvetica', Helvetica, Arial!important ;	
+
+	width:525px;	  
+	height:37px;
+	padding:5px;
+	-webkit-border-bottom-left-radius: 4px;
+-webkit-border-bottom-right-radius: 4px;
+-moz-border-radius-bottomleft: 4px;
+-moz-border-radius-bottomright: 4px;
+border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;
+	font-size:0.7em;
+	position:absolute;
+	text-align:center;
+	text-transform:none;
+	text-decoration:none;
+	text-align:center;
+	border-right: 0px solid rgba(233, 235, 241, 1);
+	  border-left: 0px solid rgba(233, 235, 241, 1);
+	   border-top: 0px solid rgba(233, 235, 241, 1);
+	    border-bottom: 0px solid rgba(233, 235, 241, 1);	
+	
+
+}
+
+
+.earthquakefooter span
+{
+	color:#777; 
+	font-size:0.9em;
+	font-family: 'Helvetica', Helvetica, Arial!important ;	
+
+	text-align:center;
+	text-transform:none;
+	text-decoration:none;
+	
+	
+	
+	
+
+}
+.earthquakefooter .a
+{
+	color:#777; 
+	font-size:0.9em;
+	font-family: 'Helvetica', Helvetica, Arial!important ;	
+
+	text-align:center;
+	text-transform:none;
+	text-decoration:none;
+	
+	
+	
+	
+
+}
